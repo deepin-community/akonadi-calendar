@@ -1,0 +1,2 @@
+rm_conffile /etc/xdg/akonadi-calendar.categories 4:20.04.1-2~
+rm_conffile /etc/xdg/akonadi-calendar.renamecategories 4:20.04.1-2~

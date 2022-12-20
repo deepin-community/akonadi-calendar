@@ -1,0 +1,86 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: akonadi-calendar
+Source: https://invent.kde.org/pim/akonadi-calendar
+Upstream-Contact: kde-devel@kde.org
+
+Files: *
+Copyright: 2009, Allen Winter <winter@kde.org>
+           1998, Barry D Benowitz <b.benowitz@telesciences.com>
+           2010, Bertjan Broeksema <broeksema@kde.org>
+           2008, Bruno Virlet <bvirlet@kdemail.net>
+           2010, Casey Link <unnamedrambler@gmail.com>
+           2009, Constantin Berzan <exit3219@gmail.com>
+           2001-2004, Cornelius Schumacher <schumacher@kde.org>
+           2009, Frank Osterfeld <osterfeld@kde.org>
+           2011, Grégory Oestreicher <greg@kamago.net>
+           2009, KDAB <info@klaralvdalens-datakonsult.se>
+           2002-2011, Klaralvdalens Datakonsult AB, a KDAB Group company <info@kdab.com>
+           2002-2010, Klarälvdalens Datakonsult AB
+           2014-2018, Laurent Montel <montel@kde.org>
+           2004, Reinhold Kainhofer <reinhold@kainhofer.com>
+           2011, Rosetta Contributors and Canonical Ltd 2011
+           2014, Sandro Knauß <knauss@kolabsys.com>
+           2010-2013, Sérgio Martins <iamsergio@gmail.com>
+           2011, Sérgio Martins <sergio.martins@kdab.com>
+           2010-2016, This_file_is_part_of_KDE
+           Tobias Koenig <tokoe@kdab.com>
+           2009-2010, Tobias Koenig <tokoe@kde.org>
+           2007-2009, Volker Krause <vkrause@kde.org>
+License: LGPL-2+
+
+Files: src/kcolumnfilterproxymodel.cpp
+       src/kcolumnfilterproxymodel_p.h
+Copyright: 2010, Klarälvdalens Datakonsult AB
+License: LGPL-2.1+
+
+Files: debian/*
+Copyright: 2015 Harald Sitter <sitter@kde.org>
+License: LGPL-2+
+
+Files: po/ca/*
+       po/ca@valencia/*
+       po/uk/*
+Copyright: 2014-2017, This_file_is_part_of_KDE
+License: LGPL-2.1+3+KDEeV
+
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public License
+ along with this library; see the file COPYING.LIB.  If not, write to
+ the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+ Boston, MA 02110-1301, USA.
+ .
+ On Debian systems, the complete text of the GNU Library General
+ Public License version 2 can be found in "/usr/share/common-licenses/LGPL-2".
+
+License: LGPL-2.1+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ The complete text of the GNU Lesser General Public License version 2.1
+ can be found in `/usr/share/common-licenses/LGPL-2.1'.
+
+License: LGPL-2.1+3+KDEeV
+ This file is distributed under the license LGPL version 2.1 or
+ version 3 or later versions approved by the membership of KDE e.V.
+ .
+ The complete text of the GNU Lesser General Public License version 2.1 can be
+ found in `/usr/share/common-licenses/LGPL-2.1', likewise, the complete text
+ of the GNU Lesser General Public License version 3 can be found in
+ `/usr/share/common-licenses/LGPL-3'.

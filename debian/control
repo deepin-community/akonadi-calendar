@@ -1,0 +1,69 @@
+Source: akonadi-calendar
+Section: libs
+Priority: optional
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Norbert Preining <norbert@preining.info>,
+           Sandro Knauß <hefee@debian.org>,
+Build-Depends: cmake (>= 3.16~),
+               debhelper-compat (= 13),
+               extra-cmake-modules (>= 5.83.0~),
+               gettext,
+               libkf5akonadi-dev (>= 4:21.08.1~),
+               libkf5akonadicontact-dev (>= 4:21.08.1~),
+               libkf5calendarcore-dev (>= 5:5.83.0~),
+               libkf5calendarutils-dev (>= 4:21.08.1~),
+               libkf5codecs-dev (>= 5.83.0~),
+               libkf5grantleetheme-dev (>= 21.08.1~),
+               libkf5i18n-dev (>= 5.83.0~),
+               libkf5identitymanagement-dev (>= 21.08.1~),
+               libkf5kio-dev (>= 5.83.0~),
+               libkf5mailtransport-dev (>= 21.08.1~),
+               libkf5widgetsaddons-dev (>= 5.83.0~),
+               libkf5xmlgui-dev (>= 5.83.0~),
+               pkg-kde-tools (>> 0.15.15),
+               qtbase5-dev (>= 5.15.0~),
+               xauth,
+               xvfb,
+Standards-Version: 4.6.0
+Homepage: https://invent.kde.org/pim/akonadi-calendar
+Vcs-Browser: https://salsa.debian.org/qt-kde-team/kde/akonadi-calendar
+Vcs-Git: https://salsa.debian.org/qt-kde-team/kde/akonadi-calendar.git
+Rules-Requires-Root: no
+
+Package: libkf5akonadicalendar-data
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Description: data files for akonadi-calendar
+ This library offers helper functions to integrate the use of Akonadi calendar
+ items in applications.
+ .
+ This package contains shared data files.
+
+Package: libkf5akonadicalendar-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: libkf5akonadi-dev (>= 4:21.08.1~),
+         libkf5akonadicalendar5abi1 (= ${binary:Version}),
+         libkf5akonadicontact-dev (>= 4:21.08.1~),
+         libkf5calendarcore-dev (>= 5:5.83.0~),
+         ${misc:Depends},
+Description: akonadi-calendar - development files
+ This library offers helper functions to integrate the use of Akonadi calendar
+ items in applications.
+ .
+ This package contains the development files.
+
+Package: libkf5akonadicalendar5abi1
+X-Debian-ABI: 1
+X-CMake-Target: KF5AkonadiCalendar
+Architecture: any
+Multi-Arch: same
+Depends: libkf5akonadicalendar-data (= ${source:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: library providing calendar helpers for Akonadi items
+ This library offers helper functions to integrate the use of Akonadi calendar
+ items in applications.
+Provides: ${ABI:VirtualPackage}
