@@ -1,0 +1,8 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -117,3 +117,5 @@ kde_configure_git_pre_commit_hook(CHECKS
+ ki18n_install(po)
+ feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
+ 
++
++include(/usr/share/pkg-kde-tools/cmake/DebianABIManager.cmake)
